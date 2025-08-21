@@ -40,10 +40,9 @@ challenge-caching-csv-redis/
 
 ## Prerequisites
 
-- Data installed from: [click here](https://www.kaggle.com/datasets/usdot/flight-delays?select=flights.csv)
 - Docker & Docker Compose installed
 - Python 3.12+ (if running outside Docker)
-- Flight CSV file located at `data/flights.csv`  
+- Flight CSV file located at `data/flights.csv`  (downloaded from: [click here](https://www.kaggle.com/datasets/usdot/flight-delays?select=flights.csv))
 
 ---
 
