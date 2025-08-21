@@ -1,13 +1,10 @@
-# -challenge-caching-csv-redis
 # Flights Aggregation App with Redis Caching
 
 This project computes aggregations (mean, max, std, etc.) on flight CSV data and caches results in Redis for faster subsequent queries. Logs are written both to console and a rotating log file with proper timezone handling (Europe/Brussels).
 
 ---
 
-## Project structure
-
-# Challenge: CSV Caching with Redis
+## Challenge: CSV Caching with Redis
 
 This project demonstrates how to efficiently cache CSV data using Redis, exposing a simple API to query flight data.
 
@@ -40,10 +37,9 @@ challenge-caching-csv-redis/
 
 ## Prerequisites
 
-- Data installed from: [click here](https://www.kaggle.com/datasets/usdot/flight-delays?select=flights.csv)
 - Docker & Docker Compose installed
 - Python 3.12+ (if running outside Docker)
-- Flight CSV file located at `data/flights.csv`  
+- Flight CSV file located at `data/flights.csv`  (downloaded from: [click here](https://www.kaggle.com/datasets/usdot/flight-delays?select=flights.csv))
 
 ---
 
