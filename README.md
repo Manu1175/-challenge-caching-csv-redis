@@ -55,9 +55,10 @@ docker compose up -d redis
 
 ```
 
-**Option 2: Running Redis locally
-# Install Redis (Ubuntu)
+**Option 2: Running Redis locally**
+
 ```bash
+# Install Redis (Ubuntu)
 sudo apt-get update
 sudo apt-get install redis-server
 ```
@@ -75,7 +76,7 @@ redis-cli ping
 
 ## Running the App
 
-**Option 1: Docker Compose (recommended)
+**Option 1: Docker Compose (recommended)**
 
 ```bash
 docker-compose build app  
@@ -86,7 +87,7 @@ Logs are streamed to console and also stored in:
 ```bash
 logs/cache_history.log
 ```
-**Option 2: Run Locally
+**Option 2: Run Locally**
 ```bash
 export REDIS_HOST=localhost
 export REDIS_PORT=6379
@@ -117,9 +118,11 @@ python main.py
 2025-08-21 12:46:41,051 [INFO] Cleared 2 cached queries (prefix='cache:*')
 ```
 
-**Cache MISS indicates CSV computation.
-**Cache HIT indicates value retrieved from Redis.
-**Second run activated invalidating and clearing full cache.
+*Cache MISS indicates CSV computation.
+
+*Cache HIT indicates value retrieved from Redis.
+
+*Second run activated invalidating and clearing full cache.
 
 ## Performance Notes
 *First run: Reads CSV and computes aggregation → ~14.9s - 16s
